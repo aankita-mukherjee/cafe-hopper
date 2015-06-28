@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Visitedcafe</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Cafe</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @visitedcafe.each do |visitedcafe| %>
+      <tr>
+        <td><%= visitedcafe.user_id %></td>
+        <td><%= visitedcafe.cafe_id %></td>
+        <td><%= link_to 'Show', visitedcafe %></td>
+        <td><%= link_to 'Edit', edit_visitedcafe_path(visitedcafe) %></td>
+        <td><%= link_to 'Destroy', visitedcafe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Visitedcafe', new_visitedcafe_path %>

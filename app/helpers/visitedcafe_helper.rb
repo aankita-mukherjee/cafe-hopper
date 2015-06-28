@@ -1,0 +1,2 @@
+module VisitedcafeHelper
+end

@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cafe:</strong>
+  <%= @cafephoto.cafe_id %>
+</p>
+
+<p>
+  <strong>Photourl:</strong>
+  <%= @cafephoto.photourl %>
+</p>
+
+<%= link_to 'Edit', edit_cafephoto_path(@cafephoto) %> |
+<%= link_to 'Back', cafephotos_path %>

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Wishlistedcafes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Cafe</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @wishlistedcafes.each do |wishlistedcafe| %>
+      <tr>
+        <td><%= wishlistedcafe.user_id %></td>
+        <td><%= wishlistedcafe.cafe_id %></td>
+        <td><%= link_to 'Show', wishlistedcafe %></td>
+        <td><%= link_to 'Edit', edit_wishlistedcafe_path(wishlistedcafe) %></td>
+        <td><%= link_to 'Destroy', wishlistedcafe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Wishlistedcafe', new_wishlistedcafe_path %>

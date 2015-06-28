@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @blockedcafe.user_id %>
+</p>
+
+<p>
+  <strong>Cafe:</strong>
+  <%= @blockedcafe.cafe_id %>
+</p>
+
+<%= link_to 'Edit', edit_blockedcafe_path(@blockedcafe) %> |
+<%= link_to 'Back', blockedcafes_path %>

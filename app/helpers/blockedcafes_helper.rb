@@ -1,0 +1,2 @@
+module BlockedcafesHelper
+end

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Cafephotos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Cafe</th>
+      <th>Photourl</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cafephotos.each do |cafephoto| %>
+      <tr>
+        <td><%= cafephoto.cafe_id %></td>
+        <td><%= cafephoto.photourl %></td>
+        <td><%= link_to 'Show', cafephoto %></td>
+        <td><%= link_to 'Edit', edit_cafephoto_path(cafephoto) %></td>
+        <td><%= link_to 'Destroy', cafephoto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Cafephoto', new_cafephoto_path %>

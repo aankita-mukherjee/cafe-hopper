@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Blockedcafes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Cafe</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @blockedcafes.each do |blockedcafe| %>
+      <tr>
+        <td><%= blockedcafe.user_id %></td>
+        <td><%= blockedcafe.cafe_id %></td>
+        <td><%= link_to 'Show', blockedcafe %></td>
+        <td><%= link_to 'Edit', edit_blockedcafe_path(blockedcafe) %></td>
+        <td><%= link_to 'Destroy', blockedcafe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Blockedcafe', new_blockedcafe_path %>

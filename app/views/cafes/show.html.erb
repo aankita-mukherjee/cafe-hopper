@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cafename:</strong>
+  <%= @cafe.cafename %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @cafe.address %>
+</p>
+
+<p>
+  <strong>Goforits:</strong>
+  <%= @cafe.goforits %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @cafe.phone %>
+</p>
+
+<p>
+  <strong>Hashtags:</strong>
+  <%= @cafe.hashtags %>
+</p>
+
+<p>
+  <strong>Features:</strong>
+  <%= @cafe.features %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @cafe.description %>
+</p>
+
+<%= link_to 'Edit', edit_cafe_path(@cafe) %> |
+<%= link_to 'Back', cafes_path %>

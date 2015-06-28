@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @wishlistedcafe.user_id %>
+</p>
+
+<p>
+  <strong>Cafe:</strong>
+  <%= @wishlistedcafe.cafe_id %>
+</p>
+
+<%= link_to 'Edit', edit_wishlistedcafe_path(@wishlistedcafe) %> |
+<%= link_to 'Back', wishlistedcafes_path %>

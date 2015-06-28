@@ -1,0 +1,2 @@
+module WishlistedcafesHelper
+end
